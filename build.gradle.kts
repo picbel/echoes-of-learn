@@ -21,6 +21,11 @@ repositories {
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-mail")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+
+    // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
+    implementation("org.eclipse.jgit:org.eclipse.jgit:6.9.0.202403050737-r")
+
+    
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
