@@ -1,4 +1,4 @@
-package com.picbel.echoesoflearn.core.parser
+package com.picbel.echoesoflearn.util.parser
 
 interface LearnParser {
 }
