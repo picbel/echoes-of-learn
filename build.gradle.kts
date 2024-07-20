@@ -1,10 +1,10 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "3.2.4"
-    id("io.spring.dependency-management") version "1.1.4"
+//    id("org.springframework.boot") version "3.2.4"
+//    id("io.spring.dependency-management") version "1.1.4"
     kotlin("jvm") version "1.9.23"
-    kotlin("plugin.spring") version "1.9.23"
+//    kotlin("plugin.spring") version "1.9.23"
 }
 
 group = "com.picbel"
@@ -19,14 +19,9 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-mail")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
 
-    // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
-    implementation("org.eclipse.jgit:org.eclipse.jgit:6.9.0.202403050737-r")
-
-    
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+//    // https://mvnrepository.com/artifact/org.eclipse.jgit/org.eclipse.jgit
+//    implementation("org.eclipse.jgit:org.eclipse.jgit:6.9.0.202403050737-r")
 }
 
 tasks.withType<KotlinCompile> {
