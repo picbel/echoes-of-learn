@@ -32,5 +32,6 @@ data class Echo(
 ) {
     init {
         require(importance > 0) { "importance must be greater than 0" }
+
     }
 }

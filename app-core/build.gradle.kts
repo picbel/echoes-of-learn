@@ -2,9 +2,15 @@ dependencies {
     testImplementation(kotlin("test"))
 }
 
-tasks.test {
-    useJUnitPlatform()
+val testJar by tasks.registering(Jar::class) {
+    archiveClassifier.set("tests")
+    from(sourceSets["test"].output)
 }
-kotlin {
-    jvmToolchain(21)
+
+configurations {
+    create("testArtifacts")
+}
+
+artifacts {
+    add("testArtifacts", testJar)
 }

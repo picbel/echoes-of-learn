@@ -7,7 +7,7 @@ plugins {
     kotlin("plugin.spring")
 }
 
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 allprojects {
     group = "com.picbel.echolearn"
@@ -24,7 +24,6 @@ subprojects {
 
     apply(plugin = "kotlin")
     apply(plugin = "kotlin-spring")
-    apply(plugin = "kotlin-allopen")
 
     dependencies {
         implementation("com.fasterxml.jackson.module:jackson-module-kotlin")

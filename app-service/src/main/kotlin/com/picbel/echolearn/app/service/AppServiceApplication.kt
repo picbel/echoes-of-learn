@@ -1,4 +1,4 @@
-package com.picbel.echo.app.service
+package com.picbel.echolearn.app.service
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

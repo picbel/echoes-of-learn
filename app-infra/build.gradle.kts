@@ -3,9 +3,7 @@ dependencies {
     implementation(project(":app-service"))
 
     testImplementation(project(":app-core", "testArtifacts"))
-    testImplementation(project(":app-service"))
-    testImplementation(project(":app"))
-
+    testImplementation(project(":app-service", "testArtifacts"))
 }
 
 repositories {

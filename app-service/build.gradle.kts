@@ -2,6 +2,8 @@ dependencies {
     implementation(project(":app-core"))
 
     implementation("org.springframework.boot:spring-boot")
+
+    testImplementation(project(":app-core", "testArtifacts"))
 }
 
 val testJar by tasks.registering(Jar::class) {
