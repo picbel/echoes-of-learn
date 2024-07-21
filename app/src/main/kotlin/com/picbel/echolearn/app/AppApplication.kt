@@ -1,11 +1,11 @@
-package com.picbel.echo.app.infra
+package com.picbel.echolearn.app
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class AppInfraApplication
+class AppApplication
 
 fun main(args: Array<String>) {
-    runApplication<AppInfraApplication>(*args)
+    runApplication<AppApplication>(*args)
 }

@@ -1,4 +1,4 @@
-package com.picbel.echo.app.infra
+package com.picbel.echolearn.app.infra
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

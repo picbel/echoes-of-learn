@@ -1,10 +1,10 @@
-package com.picbel.echo.app.service
+package com.picbel.echolearn.app
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class AppServiceApplicationTests {
+class AppApplicationTests {
 
     @Test
     fun contextLoads() {

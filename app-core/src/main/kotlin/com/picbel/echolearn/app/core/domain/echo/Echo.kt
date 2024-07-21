@@ -1,4 +1,4 @@
-package com.picbel.echo.app.core.domain.echo
+package com.picbel.echolearn.app.core.domain.echo
 
 import java.time.Instant
 
@@ -29,4 +29,8 @@ data class Echo(
      * 마지막 Echo를 반환된 시간
      */
     val returnEchoAt: Instant?
-)
+) {
+    init {
+        require(importance > 0) { "importance must be greater than 0" }
+    }
+}
