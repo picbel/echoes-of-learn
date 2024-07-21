@@ -1,9 +1,11 @@
 dependencies {
     implementation(project(":app-core"))
 
-    implementation("org.springframework.boot:spring-boot")
+    implementation("org.springframework.boot:spring-boot-starter")
 
     testImplementation(project(":app-core", "testArtifacts"))
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 val testJar by tasks.registering(Jar::class) {

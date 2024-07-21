@@ -2,8 +2,12 @@ dependencies {
     implementation(project(":app-core"))
     implementation(project(":app-service"))
 
+    implementation("org.springframework.boot:spring-boot-starter")
+
     testImplementation(project(":app-core", "testArtifacts"))
     testImplementation(project(":app-service", "testArtifacts"))
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 repositories {

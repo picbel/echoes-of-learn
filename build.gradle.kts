@@ -28,11 +28,9 @@ subprojects {
     dependencies {
         implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
         implementation("org.jetbrains.kotlin:kotlin-reflect")
-        testImplementation("org.springframework.boot:spring-boot-starter-test")
         testImplementation("com.github.javafaker:javafaker:1.0.2") {
             exclude(group = "org.yaml", module = "snakeyaml")
         }
-        testImplementation("org.springframework.boot:spring-boot-starter-test")
         testImplementation("io.kotest:kotest-runner-junit5:5.5.5")
         testImplementation("io.kotest:kotest-assertions-core:5.5.5")
     }

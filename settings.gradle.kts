@@ -9,7 +9,6 @@ pluginManagement {
 
         kotlin("jvm") version kotlinVersion
         kotlin("plugin.spring") version kotlinVersion
-        kotlin("plugin.allopen") version kotlinVersion
     }
 }
 rootProject.name = "echoes-of-learn"
