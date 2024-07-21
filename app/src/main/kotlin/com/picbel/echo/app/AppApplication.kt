@@ -1,4 +1,4 @@
-package com.picbel.app
+package com.picbel.echo.app
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

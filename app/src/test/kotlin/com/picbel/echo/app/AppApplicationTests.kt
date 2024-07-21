@@ -1,10 +1,10 @@
-package com.picbel.appinfra
+package com.picbel.echo.app
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class AppInfraApplicationTests {
+class AppApplicationTests {
 
     @Test
     fun contextLoads() {
