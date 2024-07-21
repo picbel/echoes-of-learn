@@ -1,5 +1,6 @@
 package com.picbel.echolearn.app.core.domain.echo
 
+import java.time.Duration
 import java.time.Instant
 
 data class Echo(
@@ -28,10 +29,28 @@ data class Echo(
     /**
      * 마지막 Echo를 반환된 시간
      */
-    val returnEchoAt: Instant?
+    val comebackEchoAt: Instant?
 ) {
     init {
-        require(importance > 0) { "importance must be greater than 0" }
-
+        require(importance in 1..10) { "importance must be between 1 and 10" }
+        if (comebackEchoAt != null) {
+            require(comebackEchoAt.isAfter(createAt)) { "comebackEchoAt must be after createAt" }
+            require(comebackEchoAt.isBefore(Instant.now())) { "comebackEchoAt must be before now" }
+        }
     }
+
+    /**
+     * 마지막 Echo 반환 후 지난 일수
+     */
+    val daysSinceComebackEcho: Int
+        get() = Duration.between(
+            comebackEchoAt ?: createAt,
+            Instant.now()
+        ).toDays().toInt()
+
+    /**
+     * 복귀 우선순위
+     */
+    val comebackPriority: Int
+        get() = importance * daysSinceComebackEcho
 }
