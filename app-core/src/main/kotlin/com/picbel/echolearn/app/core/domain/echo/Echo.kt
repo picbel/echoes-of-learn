@@ -53,4 +53,8 @@ data class Echo(
      */
     val comebackPriority: Int
         get() = importance * daysSinceComebackEcho
+
+    fun comeback(): Echo {
+        return copy(comebackEchoAt = Instant.now())
+    }
 }
